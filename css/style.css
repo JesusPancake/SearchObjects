@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+section .backTest {
+  opacity: 0.0001;
+  z-index: 3;
+  height: 800px;
+  width: 1200px;
+  position: absolute;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.objects-bar img {
+  width: 100px;
+}
+
+.baltika9 {
+  position: absolute;
+  height: 90px;
+  top: 301px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.pepega {
+  position: absolute;
+  height: 29px;
+  top: 265px;
+  right: 0px;
+  left: 572px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.byface {
+  position: absolute;
+  height: 36px;
+  top: 138px;
+  right: 0px;
+  left: 1024px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.dead {
+  position: absolute;
+  height: 52px;
+  top: 560px;
+  right: 0px;
+  left: 599px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.nut {
+  position: absolute;
+  height: 29px;
+  top: 35px;
+  right: 0px;
+  left: 520px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.pika {
+  position: absolute;
+  height: 42px;
+  top: 187px;
+  right: 0px;
+  left: 451px;
+  bottom: 0px;
+  z-index: 4;
+}
+
+.objects-bar {
+  height: 120px;
+  width: 1200px;
+  background: rgb(236, 189, 86);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hidden {
+  z-index: 2;
+  opacity: 0;
+  transition: ease-in-out 1s;
+}
+
+.endGame {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.youWin {
+  font-size: 70px;
+  color: aliceblue;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.refresh img {
+  height: 70px;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

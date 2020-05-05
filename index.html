@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сер Гей</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="game-body">
+        <div class="background">
+          <img src="img/background.jpg" alt="background" />
+          <img class="backTest" src="img/background.jpg" alt="background" />
+          <img class="pepega" src="img/pepega.png" alt="pepega" />
+          <img class="baltika9" src="img/Балтика9.png" alt="baltika9" />
+          <img class="byface" src="img/вуфэйс.png" alt="byface" />
+          <img class="dead" src="img/Дед.png" alt="dead" />
+          <img class="nut" src="img/орешек.png" alt="nut" />
+          <img class="pika" src="img/Пикачу.png" alt="pika" />
+        </div>
+      </div>
+
+      <div class="objects-bar">
+        <div><img class="pepega2" src="img/pepega.png" alt="pepega" /></div>
+        <div>
+          <img class="baltika92" src="img/Балтика9.png" alt="baltika9" />
+        </div>
+        <div><img class="byface2" src="img/вуфэйс.png" alt="byface" /></div>
+        <div><img class="dead2" src="img/Дед.png" alt="dead" /></div>
+        <div><img class="nut2" src="img/орешек.png" alt="nut" /></div>
+        <div><img class="pika2" src="img/Пикачу.png" alt="pika" /></div>
+      </div>
+      <div>
+        <div class="endGame">
+          <div class="baultBoy"><img src="img/win.png" alt="win" /></div>
+          <div class="youWin"><p>You Win!</p></div>
+          <div class="refresh"><img src="img/refresh.png" alt="refresh" /></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const pepega = document.querySelector(".pepega");
+      const pepega2 = document.querySelector(".pepega2");
+      const baltika9 = document.querySelector(".baltika9");
+      const baltika92 = document.querySelector(".baltika92");
+      const byface = document.querySelector(".byface");
+      const byface2 = document.querySelector(".byface2");
+      const dead = document.querySelector(".dead");
+      const dead2 = document.querySelector(".dead2");
+      const nut = document.querySelector(".nut");
+      const nut2 = document.querySelector(".nut2");
+      const pika = document.querySelector(".pika");
+      const pika2 = document.querySelector(".pika2");
+      const reload = document.querySelector(".refresh");
+      let counter = 0;
+      console.log(typeof counter);
+
+      reload.addEventListener("click", function (e) {
+        location.reload();
+      });
+
+      baltika9.addEventListener("click", function (e) {
+        e.preventDefault;
+        this.classList.add("hidden");
+        baltika92.classList.add("hidden");
+        counter++;
+        checkEndGame();
+      });
+
+      pepega.addEventListener("click", function (e) {
+        e.preventDefault;
+        this.classList.add("hidden");
+        pepega2.classList.add("hidden");
+        counter++;
+        checkEndGame();
+      });
+
+      byface.addEventListener("click", function (e) {
+        e.preventDefault;
+        this.classList.add("hidden");
+        byface2.classList.add("hidden");
+        counter++;
+        checkEndGame();
+      });
+
+      dead.addEventListener("click", function (e) {
+        e.preventDefault;
+        this.classList.add("hidden");
+        dead2.classList.add("hidden");
+        counter++;
+        checkEndGame();
+      });
+
+      nut.addEventListener("click", function (e) {
+        e.preventDefault;
+        this.classList.add("hidden");
+        nut2.classList.add("hidden");
+        counter++;
+        checkEndGame();
+      });
+
+      pika.addEventListener("click", function (e) {
+        e.preventDefault;
+        this.classList.add("hidden");
+        pika2.classList.add("hidden");
+        counter++;
+        checkEndGame();
+      });
+
+      function checkEndGame() {
+        if (counter == 6) {
+          let endGame = document.querySelector(".endGame");
+          endGame.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>
